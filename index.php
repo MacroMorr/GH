@@ -19,7 +19,7 @@ include 'function.php';
 <div class="container">
     <div class="row">
         <div class="form-control mt-3 mb-3">
-            <h5 class="text-center">Дробные данные воодятся через точку (пример: 1.1)</h5>
+            <div class="text-center mt-2 mb-3 ">Дробные данные водятся через точку (пример: 1.1|1.4|1.8)</div>
             <form action="" method="post">
                 <div class="form-group mt-2">
                     <label class="w-100">Клапан полива
@@ -206,7 +206,7 @@ include 'function.php';
     </tbody>
     </table>
         <div>
-            <a href="generatePDF.php" class="btn btn-danger w-25 mt-3 mb-5 " target="_blank">Скачать PDF</a>
+            <a href="generatePDF.php" class="btn btn-success w-25 mt-3 mb-5 " target="_blank">Скачать PDF</a>
         </div>
 </div>
 </div>
