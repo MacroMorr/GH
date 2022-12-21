@@ -5,6 +5,7 @@
 - composer 2.4;
 - Bootstrap 4
 - В файл `db.php` внести данные БД;
+
 ###Создать таблицы в БД
 ```
 create table department(
