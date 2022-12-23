@@ -3,13 +3,6 @@ include 'db.php';
 
 $getId = intval($_GET['id']);
 
-//$valveWatering = intval($_POST['valve_watering']);
-//$volume = floatval($_POST['volume']);
-//$ec = floatval($_POST['EC']);
-//$pH = floatval($_POST['pH']);
-//$name = $_POST['type'];
-//$department = floatval($_POST['department']);
-
 $valveWatering = $_POST['valve_watering'];
 $volume = $_POST['volume'];
 $ec = $_POST['EC'];
@@ -17,11 +10,6 @@ $pH = $_POST['pH'];
 $name = $_POST['type'];
 $department = $_POST['department'];
 $error = "Проверьте достоверность данных";
-
-//preg_match("/^[0-9]$/", $valveWatering) &&
-//preg_match("/^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$/", $volume) &&
-//preg_match("/^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$/", $ec) &&
-//preg_match("/^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$/", $pH)
 
 // insert
 if (isset($_POST['add'])) {
@@ -46,7 +34,6 @@ if (isset($_POST['add'])) {
     }
 
 }
-
 
 // read
 $sqlNameDepartment = $pdo->prepare("SELECT name FROM `type`");
