@@ -16,7 +16,7 @@ include 'function.php';
     <title>Grin House Test</title>
 </head>
 <body>
-<div class="container">
+<div class="container w-100">
     <div class="row">
         <div class="form-control mt-3 mb-3">
             <div class="text-center mt-2 mb-3 ">Дробные данные водятся через точку (пример: 1.1|1.4|1.8)</div>
@@ -27,6 +27,7 @@ include 'function.php';
                                placeholder="Введите номер клапана полива">
                     </label>
                 </div>
+
                 <div class="form-group mt-2">
                     <label class="w-100">Объём
                         <input type="text" class="form-control" name="volume" placeholder="Введите объём">
@@ -42,6 +43,7 @@ include 'function.php';
                         <input type="text" class="form-control" name="pH" placeholder="Введите pH">
                     </label>
                 </div>
+
                 <div class="form-group">
                     <label>Отделение
                         <select name="department" id="department" class="w-75">
